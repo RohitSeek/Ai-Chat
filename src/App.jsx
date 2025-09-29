@@ -30,7 +30,7 @@ function App() {
     
     try {
       const response = await axios({
-        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${
+        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${
           import.meta.env.VITE_API_GENERATIVE_LANGUAGE_CLIENT
         }`,
         method: "post",
@@ -54,7 +54,7 @@ function App() {
       <div className="h-full max-w-4xl mx-auto flex flex-col p-3">
         {/* Fixed Header */}
         <header className="text-center py-4">
-          <a href="https://github.com/Vishesh-Pandey/chat-ai" 
+          <a href="https://github.com/RohitSeek/Ai-Chat" 
              target="_blank" 
              rel="noopener noreferrer"
              className="block">
